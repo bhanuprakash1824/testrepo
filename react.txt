@@ -1,0 +1,27 @@
+From the menu on top of the lab, go to Terminal and open a new terminal.
+
+In the terminal, paste and run the following command to go to the home/project directory.
+
+1
+cd /home/project
+
+
+
+Run the following command to create a React application named myfirstapp using vite tool. It is mandated that the React application name cannot contain any uppercase letter.
+
+npm create vite@latest myfirstapp -- --template react 
+
+
+It requires you to confirm that the packages required can be installed. Confirm by pressing y on your keyboard to get started with the installation.
+
+After the installation is over, the application is created inside a folder with the name specified by you for the application. Change to that folder by running the following command.
+
+cd myfirstapp
+
+Then in the terminal write given commands to update scripts in package.json file and hit enter.
+
+npm pkg set scripts.lint="eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0" 
+
+npm pkg set scripts.preview="vite build && vite preview --host"
+
+npm run preview  
